@@ -13,8 +13,35 @@
 }
 
 @font-face {
-    font-family: "Forum-Regularr";
+    font-family: "Forum-Regular";
     src: url(../fonts/Forum-Regular.ttf);
     font-weight: 400;
     font-style: normal;
+}
+
+:root {
+    --dark: #0C0C0E;
+    --black: #000000;
+    --gold: #BB945F;
+    --white: #FFFFFF;
+    --gray: #8E8E8E;
+}
+
+.header__name {
+    font-family: "Forum-Regular", cursive;
+    color: var(--white);
+    font-size: 3em;
+}
+
+.menu__item {
+    font-size: 2em;
+}
+
+h1 {
+    font-family: "Forum-Regular";
+    color: var(--white);
+    font-size: 4em;
+
+    text-transform: uppercase;
+    text-align: center;
 }
