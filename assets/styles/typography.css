@@ -27,7 +27,22 @@
     --gray: #8E8E8E;
 }
 
-.header__name {
+.about_button {
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+    background-color: var(--dark);
+}
+.about_button:hover {
+    background-color: var(--gold);
+}
+
+.about_button-active {
+    background-color: var(--gold);
+}
+
+h1 {
     font-family: "Forum-Regular", cursive;
     color: var(--white);
     font-size: 3em;
@@ -37,7 +52,7 @@
     font-size: 2em;
 }
 
-h1 {
+.welcome_title { 
     font-family: "Forum-Regular";
     color: var(--white);
     font-size: 4em;
@@ -45,3 +60,29 @@ h1 {
     text-transform: uppercase;
     text-align: center;
 }
+
+h2 {
+    font-family: "Forum-Regular";
+    color: var(--dark);
+    font-size: 4em;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.create-line {
+    width: 50px;
+
+    border-top: 1px solid var(--dark);
+}
+
+.text {
+    font-family: "Inter-Regular";
+    font-size: 2em;
+}
+
