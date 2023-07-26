@@ -27,6 +27,29 @@
     --gray: #8E8E8E;
 }
 
+.btn {
+    width: 75px;
+    height: 30px;
+
+    border: 1px solid var(--dark);
+    border-radius: 2px;
+
+    cursor: pointer;
+    background-color: rgba(28,28,28,0);
+}
+.btn:hover {
+    background-color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.btn-text {
+    font-family: "Inter-Bold";
+    font-size: 1em;
+    letter-spacing: 1px;
+
+    color: var(--dark);
+}
+
 .about_button {
     width: 16px;
     height: 16px;
@@ -46,6 +69,8 @@ h1 {
     font-family: "Forum-Regular", cursive;
     color: var(--white);
     font-size: 3em;
+
+    letter-spacing: 0.5px;
 }
 
 .menu__item {
@@ -59,12 +84,18 @@ h1 {
 
     text-transform: uppercase;
     text-align: center;
+
+    letter-spacing: 3px;
+    line-height: 50px;
 }
 
 h2 {
     font-family: "Forum-Regular";
     color: var(--dark);
     font-size: 4em;
+
+    letter-spacing: 2px;
+    line-height: 40px;
 }
 
 .title {
@@ -81,8 +112,50 @@ h2 {
     border-top: 1px solid var(--dark);
 }
 
+.about_discription-text {
+    font-family: "Inter-Regular";
+    font-size: 2em;
+    line-height: 40px;
+}
+
 .text {
     font-family: "Inter-Regular";
     font-size: 2em;
 }
 
+.pick-favorites {
+    font-family: "Inter-Bold";
+    font-size: 2em;
+}
+
+.book-staff > p {
+    font-family: "Forum-Regular";
+    font-size: 2em;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.staff-line {
+    width: 60px;
+
+    border-top: 1px solid var(--gold);
+}
+
+.disription-text {
+    font-family: "Inter-Regular";
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.book-name {
+    text-transform: uppercase;
+}
+
+.book-name,
+.boot-author {
+    font-family: "Inter-Bold";
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 40px;
+}

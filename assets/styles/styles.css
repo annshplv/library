@@ -49,11 +49,16 @@ html {
 .box {
     margin: 20px 20px 40px 20px;
 }
+.pic {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* HEADER */
 
 .header {
-    padding: 25px 20px;
+    padding: 30px 20px 25px;
     background-color: var(--dark);
 }
 
@@ -100,9 +105,6 @@ html {
     height: 100%;
 
     background-image: url(../img/welcome.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .welcome_billet {
@@ -140,7 +142,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 42px;
+    gap: 20px;
 }
 
 .carusel {
@@ -174,4 +176,78 @@ html {
     display: flex;
     align-items: center;
     margin-top: -5px;
+
+    padding-bottom: 1.7em;
+}
+
+/* FAVORIETS */
+
+.favorites_box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.favorites_buttons {
+    display: flex;
+    gap: 100px;
+}
+
+.fav_btn {
+    display: flex;
+
+    gap: 20px;
+} 
+
+.favorites_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 220px;
+}
+
+
+.book_box {
+    width: 590px;
+    height: 555px;
+
+    position: relative;
+}
+
+.book-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 550px;
+    height: 555px;
+    border: 1px solid var(--black);
+
+    padding: 20px;
+}
+
+.book-disription {
+    width: 355px;
+    height: 320px;
+}
+
+.book-cover {
+    width: 200px;
+    height: 300px;
+
+    position: absolute;
+    top: 255px;
+    left: 390px;
+}
+
+.book-1 {
+    background-image: url(../img/book.jpg);
+}
+.book-2 {
+    background-image: url(../img/book-1.jpg);
+}
+.book-3 {
+    background-image: url(../img/book-2.jpg);
+}
+.book-4 {
+    background-image: url(../img/book-3.jpg);
 }
