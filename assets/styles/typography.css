@@ -98,6 +98,16 @@ h2 {
     line-height: 40px;
 }
 
+h3 {
+    font-family: "Forum-Regular";
+    color: var(--gold);
+
+    font-size: 4em;
+
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
 .title {
     display: flex;
     flex-direction: column;
@@ -156,6 +166,28 @@ h2 {
 .boot-author {
     font-family: "Inter-Bold";
     font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+
+.shop-text {
+    letter-spacing: 2px;
+    line-height: 40px;
+
+    text-align: center;
+}
+
+.list_drink,
+.list_food {
+    font-family: "Inter-Regular";
+    font-size: 2em;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.list_price {
+    font-family: "Forum-Regular";
+    font-size: 2em;
     letter-spacing: 2px;
     line-height: 40px;
 }
