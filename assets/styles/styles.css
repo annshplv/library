@@ -251,7 +251,7 @@ html {
 
 /* SHOP */
 
-.shop-menu {
+.columns-two {
     display: flex;
     justify-content: space-between;
 }
@@ -283,3 +283,24 @@ html {
     border-top: 1px solid var(--gold);
 }
 
+/* CONTACT */
+.inquiries {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    gap: 40px;
+}
+
+.box-20px {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map_img {
+    width: 696px;
+    height: 414px;
+
+    background-image: url(../img/map.jpg);
+}
