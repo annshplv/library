@@ -50,6 +50,27 @@
     color: var(--dark);
 }
 
+.btn-big {
+    width: 243px;
+    height: 48px;
+
+    border: 1px solid var(--dark);
+    border-radius: 2px;
+
+    cursor: pointer;
+    background-color: rgba(28,28,28,0);
+}
+
+.btn-big:hover {
+    background-color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.btn-big-text {
+    letter-spacing: 1px;
+    line-height: auto;
+}
+
 .about_button {
     width: 16px;
     height: 16px;
@@ -106,6 +127,24 @@ h3 {
 
     letter-spacing: 2px;
     line-height: 40px;
+}
+
+h4 {
+    font-family: "Inter-Regular";
+    font-size: 3em;
+
+    letter-spacing: 2%;
+    line-height: auto;
+
+    text-align: center;
+}
+
+h5 {
+    font-family: "Forum-Regular";
+    font-size: 3em;
+
+    letter-spacing: 0.5px;
+    line-height: auto;
 }
 
 .title {
@@ -203,5 +242,28 @@ h3 {
     font-family: "Inter-Regular";
     font-size: 2em;
     letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.label {
+    font-family: "Forum-Regular";
+    font-size: 3em;
+    letter-spacing: 2%;
+    line-height: 50px;
+}
+
+.get-card_text {
+    font-family: "Inter-Regular";
+    font-size: 2em;
+    letter-spacing: 2%;
+    line-height: 40px;
+
+    text-align: right;
+}
+
+.form-input-text {
+    font-family: "Inter-Regular";
+    font-size: 2em;
+    letter-spacing: 2%;
     line-height: 40px;
 }
