@@ -195,7 +195,11 @@ html {
 
 .favorites_buttons {
     display: flex;
-    gap: 90px;
+    gap: 82px;
+}
+
+.mr-8 {
+    margin-right: 8px;
 }
 
 .fav_btn {
@@ -330,7 +334,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 31px;
+    gap: 30px;
 }
 .form_box {
     display: flex;
@@ -339,7 +343,7 @@ html {
     gap: 20px;
 
     width: 600px;
-    height: 387px;
+    height: 389px;
 
     border: 3px solid var(--gold) ;
 }

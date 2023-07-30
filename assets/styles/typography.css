@@ -69,7 +69,7 @@
 
 .btn-big {
     width: 243px;
-    height: 45px;
+    height: 44px;
 
     border: 1px solid var(--dark);
     border-radius: 2px;
@@ -200,11 +200,11 @@ h5 {
     font-size: 2em;
 }
 
-.book-staff > p {
+.book-staff-title {
     font-family: "Forum-Regular";
     font-size: 2em;
     letter-spacing: 2px;
-    /* line-height: 40px; */
+    line-height: 31px;
 }
 
 .staff-line {
@@ -225,7 +225,7 @@ h5 {
 .book-name {
     text-transform: uppercase;
 
-    padding-top: 10px;
+    padding-top: 3px;
 }
 
 .book-name,
@@ -282,13 +282,18 @@ h5 {
     font-size: 3em;
     letter-spacing: 2%;
     line-height: 50px;
-    
+}
+.label-title {
+    font-family: "Forum-Regular";
+    font-size: 3em;
+    letter-spacing: 0.5px;
+    line-height: 50px;
 }
 
 .get-card_text {
     font-family: "Inter-Regular";
     font-size: 2em;
-    letter-spacing: 2%;
+    letter-spacing: 0.4px;
     line-height: 40px;
 
     text-align: right;
