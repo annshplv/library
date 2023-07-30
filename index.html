@@ -41,9 +41,9 @@
                 <section class="welcome">
                     <div class="welcome_bg pic">
                         <div class="welcome_billet">
-                            <p class="welcome_title">Welcome <br>
+                            <h6 class="welcome_title">Welcome <br>
                                 to the Brooklyn <br>
-                                Library</p>
+                                Library</h6>
                         </div>
                     </div>
                 </section>
@@ -81,7 +81,7 @@
                 </section>
 
                 <section id="favorites" class="favorites">
-                    <div class="favorites_box box">
+                    <div class="favorites_box box-1">
                         <div class="title">
                             <h2>Favorites</h2>
                             <div class="create-line"></div>
@@ -90,24 +90,32 @@
                             <p class="pick-favorites">Pick favorites of season</p>
                             <div class="favorites_buttons text">
                                 <div class="fav_btn">
-                                    <input type="radio" id="Winter" name="drone" value="Winter"
-                                        checked>
-                                    <label for="Winter">Winter</label>
+                                    <div class="wrapper_btn-fav">
+                                        <input  type="radio" id="Winter" name="drone" value="Winter"
+                                            checked>
+                                        <label class="text-bold" for="Winter">Winter</label>
+                                    </div>
                                 </div>
                                 <div class="fav_btn">
-                                    <input type="radio" id="Spring" name="drone" value="Spring"
-                                            checked>
-                                    <label for="Spring">Spring</label>
+                                    <div class="wrapper_btn-fav">
+                                        <input type="radio" id="Spring" name="drone" value="Spring"
+                                                checked>
+                                        <label class="text" for="Spring">Spring</label>
+                                    </div>
                                 </div>
                                 <div class="fav_btn">
-                                    <input type="radio" id="Summer" name="drone" value="Summer"
-                                            checked>
-                                    <label for="Summer">Summer</label>
+                                    <div class="wrapper_btn-fav">
+                                        <input type="radio" id="Summer" name="drone" value="Summer"
+                                                checked>
+                                        <label class="text" for="Summer">Summer</label>
+                                    </div>
                                 </div>
                                 <div class="fav_btn">
-                                    <input type="radio" id="Autumn" name="drone" value="Autumn"
-                                            checked>
-                                    <label for="Autumn">Autumn</label>
+                                    <div class="wrapper_btn-fav">
+                                        <input type="radio" id="Autumn" name="drone" value="Autumn"
+                                                checked>
+                                        <label  class="text" for="Autumn">Autumn</label>
+                                    </div>
                                 </div>
                             </div>
 
@@ -118,9 +126,11 @@
                                             <p>Staff Picks</p>
                                             <div class="staff-line"></div>
                                         </div>
-                                        <p class="book-name">The Book Eaters</p>
-                                        <p class="boot-author">By Sunyi Dean</p>
-                                        <p class="book-disription disription-text">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.       </p>
+                                        <div>
+                                            <p class="book-name">The Book Eaters</p>
+                                            <p class="boot-author">By Sunyi Dean</p>
+                                        </div>
+                                        <p class="book-disription disription-text">An unusual Sci-Fi Story About A Book Eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.       </p>
 
                                         <button class="btn btn-text">Buy</button>
                                     </div>
@@ -133,8 +143,10 @@
                                             <p>Staff Picks</p>
                                             <div class="staff-line"></div>
                                         </div>
-                                        <p class="book-name">Cackle</p>
-                                        <p class="boot-author">By Rachel Harrison</p>
+                                        <div>
+                                            <p class="book-name">Cackle</p>
+                                            <p class="boot-author">By Rachel Harrison</p>
+                                        </div>
                                         <p class="book-disription disription-text"> Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
 
                                         <button class="btn btn-text">Buy</button>
@@ -147,9 +159,11 @@
                                         <div class="book-staff">
                                             <p>Staff Picks</p>
                                             <div class="staff-line"></div>
-                                            </div>
-                                        <p class="book-name">Dante: Poet of the Secular World</p>
-                                        <p class="boot-author">By Erich Auerbach</p>
+                                        </div>
+                                        <div>
+                                            <p class="book-name">Dante: Poet of the Secular World</p>
+                                            <p class="boot-author">By Erich Auerbach</p>
+                                        </div>
                                         <p class="book-disription disription-text">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
 
                                         <button class="btn btn-text">Buy</button>
@@ -163,11 +177,13 @@
                                             <p>Staff Picks</p>
                                             <div class="staff-line"></div>
                                         </div>
-                                        <p class="book-name">The Last Queen</p>
-                                        <p class="boot-author">By Clive Irving</p>
+                                        <div>
+                                            <p class="book-name">The Last Queen</p>
+                                            <p class="boot-author">By Clive Irving</p>
+                                        </div>
                                         <p class="book-disription disription-text">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
 
-                                        <button class="btn btn-text">Own</button>
+                                        <button class="btn-gold" disabled="disabled">Own</button>
                                     </div>
                                     <div class="book-cover book-4 pic"></div>
                                 </div>
@@ -296,9 +312,9 @@
                                 <div class="form_box">
                                     <div class="form">
                                         <form method="post">
-                                            <label class="label" for="">Brooklyn Public Library</label>
+                                            <label class="label">Brooklyn Public Library</label>
                                             <input class="form-input label" type="text" placeholder="Reader's name ">
-                                            <input class="form-input label" type="text" placeholder="Card number">
+                                            <input class="form-input mt-5 label" type="text" placeholder="Card number">
                                         </form>
                                     </div>
                                     <button class="btn-big btn-big-text pick-favorites">Check the card</button>
@@ -318,7 +334,7 @@
                 </section>
 
             </div>
-        </main>  
+        </main>
 
         <footer class="footer__container footer__box">
             <div class="footer_box box">

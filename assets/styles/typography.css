@@ -42,6 +42,23 @@
     border: 1px solid var(--gold);
 }
 
+.btn-gold {
+    width: 75px;
+    height: 30px;
+
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+
+    cursor: pointer;
+    background-color: rgba(28,28,28,0);
+
+    font-family: "Inter-Bold";
+    font-size: 1em;
+    letter-spacing: 1px;
+
+    color: var(--gold);
+}
+
 .btn-text {
     font-family: "Inter-Bold";
     font-size: 1em;
@@ -52,7 +69,7 @@
 
 .btn-big {
     width: 243px;
-    height: 48px;
+    height: 45px;
 
     border: 1px solid var(--dark);
     border-radius: 2px;
@@ -91,11 +108,12 @@ h1 {
     color: var(--white);
     font-size: 3em;
 
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
 }
 
 .menu__item {
     font-size: 2em;
+
 }
 
 .welcome_title { 
@@ -169,7 +187,12 @@ h5 {
 
 .text {
     font-family: "Inter-Regular";
-    font-size: 2em;
+    font-size: 20px;
+}
+
+.text-bold {
+    font-family: "Inter-Bold";
+    font-size: 20px;
 }
 
 .pick-favorites {
@@ -181,7 +204,7 @@ h5 {
     font-family: "Forum-Regular";
     font-size: 2em;
     letter-spacing: 2px;
-    line-height: 40px;
+    /* line-height: 40px; */
 }
 
 .staff-line {
@@ -195,10 +218,14 @@ h5 {
     font-size: 1.5em;
     letter-spacing: 2px;
     line-height: 40px;
+
+    text-transform: capitalize;
 }
 
 .book-name {
     text-transform: uppercase;
+
+    padding-top: 10px;
 }
 
 .book-name,
@@ -207,6 +234,7 @@ h5 {
     font-size: 1.5em;
     letter-spacing: 2px;
     line-height: 40px;
+    
 }
 
 
@@ -223,6 +251,8 @@ h5 {
     font-size: 2em;
     letter-spacing: 2px;
     line-height: 40px;
+
+    text-transform: capitalize;
 }
 .list_price {
     font-family: "Forum-Regular";
@@ -243,6 +273,8 @@ h5 {
     font-size: 2em;
     letter-spacing: 2px;
     line-height: 40px;
+
+    text-transform: capitalize;
 }
 
 .label {
@@ -250,6 +282,7 @@ h5 {
     font-size: 3em;
     letter-spacing: 2%;
     line-height: 50px;
+    
 }
 
 .get-card_text {
@@ -293,3 +326,7 @@ h5 {
 
     color: var(--white);
 }
+
+.mt-5 {
+    margin-top: 5px;
+} 

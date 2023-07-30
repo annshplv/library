@@ -53,6 +53,14 @@ html {
 
     padding: 20px 20px 40px 20px;
 }
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    padding: 20px 20px 40px 20px;
+}
 .pic {
     background-position: center center;
     background-repeat: no-repeat;
@@ -182,12 +190,12 @@ html {
 /* FAVORIETS */
 
 .favorites_box {
-    margin-top: -5px;
+    margin-top: -3px;
 }
 
 .favorites_buttons {
     display: flex;
-    gap: 100px;
+    gap: 90px;
 }
 
 .fav_btn {
@@ -195,6 +203,17 @@ html {
 
     gap: 20px;
 } 
+
+.wrapper_btn-fav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    width: 109px;
+    height: 29px;
+}
 
 .favorites_catalog {
     display: flex;
@@ -213,13 +232,13 @@ html {
 .book-about {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 19px;
 
     width: 550px;
     height: 555px;
     border: 1px solid var(--black);
 
-    padding: 20px;
+    padding:  20px 20px 0;
 }
 
 .book-disription {
@@ -311,7 +330,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 31px;
 }
 .form_box {
     display: flex;
@@ -388,7 +407,7 @@ form {
 .block-social {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 19px;
 
     max-width: 229px;
 }
