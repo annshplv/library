@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+  
+ul,
+ol,
+li {
+    list-style: none;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0 0;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding: 20px 20px 40px 20px;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    padding: 20px 20px 40px 20px;
+}
+.pic {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */
+
+.header {
+    padding: 30px 20px 25px;
+    background-color: var(--dark);
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+}
+.menu__item > a {
+    color: var(--white);
+}
+
+.logo {
+    background-image: url(../icons/icon_profile.svg);
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+}
+
+/* WELCOME */
+
+.welcome {
+
+    width: 1440px;
+    height: 600px;
+}
+.welcome_bg {
+    position: static;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../img/welcome.jpg);
+}
+
+.welcome_billet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 220px;
+
+    width: 600px;
+    height: 220px;
+
+    background-color: var(--dark);
+}
+
+/* ABOUT */
+
+.about_box {
+    align-items: center;
+}
+
+.card {
+    background-repeat: no-repeat;
+
+    width: 450px;
+    height: 560px;
+}
+
+.about_carusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.carusel {
+    display: flex;
+    gap: 2.5em;
+}
+
+.card-1 {
+    background-image: url(../img/image-1.jpg);
+}
+
+.card-2 {
+    background-image: url(../img/image-2.jpg);
+}
+
+.card-3 {
+    background-image: url(../img/image-3.jpg);
+}
+
+.wrapper_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    width: 26px;
+    height: 26px;
+}
+
+.about_buttons {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+
+}
+
+/* FAVORIETS */
+
+.favorites_box {
+    margin-top: -3px;
+}
+
+.favorites_buttons {
+    display: flex;
+    gap: 82px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.fav_btn {
+    display: flex;
+
+    gap: 20px;
+} 
+
+.wrapper_btn-fav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    width: 109px;
+    height: 29px;
+}
+
+.favorites_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 220px;
+}
+
+
+.book_box {
+    width: 590px;
+    height: 555px;
+
+    position: relative;
+}
+
+.book-about {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+
+    width: 550px;
+    height: 555px;
+    border: 1px solid var(--black);
+
+    padding:  20px 20px 0;
+}
+
+.book-disription {
+    width: 355px;
+    height: 320px;
+}
+
+.book-cover {
+    width: 200px;
+    height: 300px;
+
+    position: absolute;
+    top: 255px;
+    left: 390px;
+}
+
+.book-1 {
+    background-image: url(../img/book.jpg);
+}
+.book-2 {
+    background-image: url(../img/book-1.jpg);
+}
+.book-3 {
+    background-image: url(../img/book-2.jpg);
+}
+.book-4 {
+    background-image: url(../img/book-3.jpg);
+}
+
+/* SHOP */
+
+.columns-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-drink_list, 
+.shop-food_list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.shop-food_list {
+    align-items: end;
+}
+
+.shop-drink,
+.shop-food {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.list_drink {
+    min-width: 197px;
+}
+.list_decore {
+    width: 100px;
+
+    border-top: 1px solid var(--gold);
+}
+
+/* CONTACT */
+.inquiries {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    gap: 40px;
+}
+
+.box-20px {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map_img {
+    width: 696px;
+    height: 414px;
+
+    background-image: url(../img/map.jpg);
+}
+
+/* LIBRARY CARD */
+
+.find-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.form_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    width: 600px;
+    height: 389px;
+
+    border: 3px solid var(--gold) ;
+}
+
+.get-card {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    gap: 35px;
+
+    width: 456px;
+    height: 253px;
+}
+.card-btn_list {
+    display: flex;
+    gap: 20px;
+}
+.form {
+    background-color: var(--gold);
+
+    margin-top: 20px;
+    padding: 20px 20px 25px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 20px;
+}
+
+.form-input {
+    padding: 8px 0 8px 20px;
+
+    width: 520px;
+    height: 66px;
+
+    border-radius: 10px;
+}
+
+/* FOOTER */
+
+.footer__box {
+    background-color: var(--dark);
+}
+
+.footer_box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.line-between {
+    width: 1400px;
+
+    border-top: 1px solid var(--white);
+}
+
+.footer_line {
+    display: flex;
+    justify-content: space-between;
+}
+.block-social {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+
+    max-width: 229px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.block-worktime {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 149px;
+}
