@@ -151,8 +151,8 @@ h4 {
     font-family: "Inter-Regular";
     font-size: 3em;
 
-    letter-spacing: 2%;
-    line-height: auto;
+    letter-spacing: 0.6px;
+    line-height: 35px;
 
     text-align: center;
 }
