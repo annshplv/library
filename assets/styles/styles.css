@@ -42,6 +42,14 @@ html {
     padding: 0 0;
 }
 
+@media (max-width: 768px) {
+    [class*="__container"] {
+        max-width: 768px;
+        margin: 0px auto;
+        padding: 0 0;
+    }
+}
+
 .main {
     flex: 1 1 auto;
 }
@@ -53,6 +61,8 @@ html {
 
     padding: 20px 20px 40px 20px;
 }
+
+
 
 .box-1 {
     display: flex;
@@ -104,6 +114,188 @@ html {
     height: 28px;
 }
 
+/* BURGER MENU */
+
+.burger-menu {
+    display: none;
+}
+
+.burger-menu__button {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    z-index: 30;
+    overflow: hidden;
+}
+
+.burger-menu__lines, 
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+    width: 45px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--white);
+}
+
+.burger-menu__lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::after {
+    content: '';
+    top: 12px;
+}
+.burger-menu__lines::before {
+    content: '';
+    top: -12px;
+}
+
+/* стили для активной кнопки бургера */
+
+.burger-menu__active .burger-menu__lines {
+    background-color: transparent;
+}
+.burger-menu__active .burger-menu__lines::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+.burger-menu__active .burger-menu__lines::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.burger-menu__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    right: -100%;
+    top: 0;
+
+	width: 332px;
+	height: 570px;
+   
+    background-color: var(--black);
+    overflow-y: auto;
+    z-index: 20;
+}
+.burger-menu__active .burger-menu__nav {
+    right: 0;
+}
+
+.burger-menu__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.burger-menu__item {
+    font-family: "Inter-Regular";
+    font-size: 2em;
+    line-height: 50px;
+    color: var(--white);
+}
+
+.burger-menu__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+
+    z-index: 10;
+}
+
+.burger-menu__active .burger-menu__overlay {
+    display: block;
+}
+
+/* .menu-btn {
+    width: 45px;
+    height: 22px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.btn-line {
+    width: 45px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    transition: all 0,5s;
+
+    z-index: 2;
+}
+.burger-menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.burger-menu__item > a {
+    font-family: "Inter-Regular";
+    font-size: 2em;
+    line-height: 50px;
+    color: var(--white);
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+.burger-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+    right: -500px;
+	width: 332px;
+	height: 570px;
+	padding: 45px;
+    background: var(--black);
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+
+    z-index: 1;
+}
+.burger-menu.active {
+	transform: translateX(0);
+}
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+} */
+
+
+@media (max-width: 1024px) {
+    .header__menu {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+}
+
+
 /* WELCOME */
 
 .welcome {
@@ -133,6 +325,10 @@ html {
     background-color: var(--dark);
 }
 
+@media (max-width: 768px) {
+   
+}
+
 /* ABOUT */
 
 .about_box {
@@ -153,9 +349,15 @@ html {
     gap: 20px;
 }
 
+.arrow {
+    margin-top: 40px;
+    display: none;
+}
+
 .carusel {
     display: flex;
     gap: 2.5em;
+    flex-wrap: wrap;
 }
 
 .card-1 {
@@ -183,8 +385,32 @@ html {
 .about_buttons {
     display: flex;
     align-items: center;
-    margin-top: -5px;
+    margin-top: 15px;
 
+}
+
+@media (max-width: 1024px) {
+    .about_discription {
+        max-width: 728px;
+    }
+    .about_discription-text {
+        text-align: center;
+    }
+    .about_buttons {
+        margin-top: 2px;
+    }
+    .card-2 {
+        display: none;
+    }
+    .card-3 {
+        display: none;
+    }
+    .arrow {
+        display: block;
+    }
+    .carusel {
+        gap: 2.5em 4.7em;
+    }
 }
 
 /* FAVORIETS */
@@ -195,6 +421,7 @@ html {
 
 .favorites_buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 82px;
 }
 
@@ -272,11 +499,24 @@ html {
     background-image: url(../img/book-3.jpg);
 }
 
+@media (max-width: 1024px) {
+    .favorites_catalog {
+        justify-content: center;
+    }
+}
+
 /* SHOP */
 
 .columns-two {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    .columns-two {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .shop-drink_list, 
@@ -287,6 +527,9 @@ html {
 }
 .shop-food_list {
     align-items: end;
+}
+.shop-drink_list {
+    align-items: start;
 }
 
 .shop-drink,
@@ -304,6 +547,12 @@ html {
     width: 100px;
 
     border-top: 1px solid var(--gold);
+}
+
+@media (max-width: 768px) {
+   .menu-gap {
+    gap: 38px;
+   }
 }
 
 /* CONTACT */
@@ -326,6 +575,14 @@ html {
     height: 414px;
 
     background-image: url(../img/map.jpg);
+    margin-left: 15px;
+
+}
+
+@media (max-width: 768px) {
+   .inquiries-gap {
+    gap: 100px;
+   }
 }
 
 /* LIBRARY CARD */
@@ -386,6 +643,21 @@ form {
     border-radius: 10px;
 }
 
+@media (max-width: 1024px) {
+    .get-card {
+        align-items: center;
+        width: 600px;
+        height: 223px;
+    }
+    .get-card_text {
+        text-align: center;
+    }
+    .card-gap {
+        gap: 20px;
+        align-items: center;
+       }
+}
+
 /* FOOTER */
 
 .footer__box {
@@ -427,4 +699,22 @@ form {
     gap: 10px;
 
     max-width: 149px;
+}
+
+@media (max-width: 1024px) {
+    .line-between {
+        max-width: 984px;
+    }
+}
+
+@media (max-width: 640px) {
+    .line-between {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .line-between {
+        width: 728px;
+    }
 }
