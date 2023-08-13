@@ -18,20 +18,58 @@
                 </div>
 
                 <div class="header_nav">
-                    <!-- <div> -->
-                        <nav class="header__menu menu">
-                            <ul class="menu__list">
-                                <li class="menu__item"><a href="#about">About</a></li>
-                                <li class="menu__item"><a href="#favorites">Favorites</a></li>
-                                <li class="menu__item"><a href="#shop">Coffee shop</a></li>
-                                <li class="menu__item"><a href="#contacts">Contacts</a></li>
-                                <li class="menu__item"><a href="#card">Library Card</a></li>
-                            </ul>
-                        </nav>
-                    <!-- </div> -->
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#about">About</a></li>
+                            <li class="menu__item"><a href="#favorites">Favorites</a></li>
+                            <li class="menu__item"><a href="#shop">Coffee shop</a></li>
+                            <li class="menu__item"><a href="#contacts">Contacts</a></li>
+                            <li class="menu__item"><a href="#card">Library Card</a></li>
+                        </ul>
+                    </nav>
+
                     <div class="header_logo">
                         <div class="logo"></div>
                     </div>
+
+                    <div class="burger-menu burger-menu__active">
+
+                        <div href="" class="burger-menu__button">
+                            <span class="burger-menu__lines"></span>
+                        </div>
+
+                        <nav class="burger-menu__nav">
+                            <ul class="burger-menu__items">
+                                <li><a class="burger-menu__item" href="#about">About</a></li>
+                                <li><a class="burger-menu__item" href="#favorites">Favorites</a></li>
+                                <li><a class="burger-menu__item" href="#shop">Coffee shop</a></li>
+                                <li><a class="burger-menu__item" href="#contacts">Contacts</a></li>
+                                <li><a class="burger-menu__item" href="#card">Library Card</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="burger-menu__overlay"></div>
+                    </div>
+
+<!-- 
+                        <div class="menu-btn">
+                            <span class="btn-line"></span>
+                            <span class="btn-line"></span>
+                            <span class="btn-line"></span>
+                        </div>
+        
+                        <div class="burger-menu">
+
+                            <nav>
+                                <ul class="burger-menu__list">
+                                    <li class="burger-menu__item"><a href="#about">About</a></li>
+                                    <li class="burger-menu__item"><a href="#favorites">Favorites</a></li>
+                                    <li class="burger-menu__item"><a href="#shop">Coffee shop</a></li>
+                                    <li class="burger-menu__item"><a href="#contacts">Contacts</a></li>
+                                    <li class="burger-menu__item"><a href="#card">Library Card</a></li>
+                                </ul>
+                            </nav>
+                        </div> -->
                 </div>
             </div>
         </header>
@@ -59,24 +97,27 @@
                             <div class="about_discription">
                                 <p class="about_discription-text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
                             </div>
-                                <div class="carusel">
+                            <div class="carusel">
+                                <img class="arrow" src="./assets/icons/Arrow-left.svg" alt="arrow">
                                 <div class="card card-1 pic"></div>
                                 <div class="card card-2 pic"></div>
                                 <div class="card card-3 pic"></div>
+                                <img class="arrow" src="./assets/icons/Arrow-right.svg" alt="arrow">
+                            </div>
+
+                            <div class="about_buttons">
+                                <div class="wrapper_btn">
+                                    <div class="about_button about_button-active"></div>
+                                </div>
+                                <div class="wrapper_btn">
+                                    <div class="about_button"></div>
+                                </div>
+                                <div class="wrapper_btn">
+                                    <div class="about_button"></div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="about_buttons">
-                            <div class="wrapper_btn">
-                                <div class="about_button about_button-active"></div>
-                            </div>
-                            <div class="wrapper_btn">
-                                <div class="about_button"></div>
-                            </div>
-                            <div class="wrapper_btn">
-                                <div class="about_button"></div>
-                            </div>
-                        </div>
                     </div>
                 </section>
 
@@ -202,7 +243,7 @@
                         <p class="shop-text text">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
                             you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
                         
-                        <div class="columns-two">
+                        <div class="columns-two menu-gap">
                             <div class="shop-drink_list">
                                 <h3>Coffee & Tea</h3>
                                 <div class="shop-drink">
@@ -281,7 +322,7 @@
                             <div class="create-line"></div>
                         </div>
 
-                        <div class="columns-two">
+                        <div class="columns-two inquiries-gap">
                             <div class="inquiries">
                                 <p class="inquiries_text-bold">For all Library inquiries:</p>
                                 <div class="box-20px">
@@ -306,7 +347,7 @@
                             <div class="create-line"></div>
                         </div>
 
-                        <div class="columns-two">
+                        <div class="columns-two card-gap">
                             <div class="find-card">
                                 <h4>Find your Library card</h4>
                                 <div class="form_box">
@@ -354,7 +395,7 @@
                             10:00 am - 06:00 pm</p>
                     </div>
                 </div>
-                <div class="line-between"></div>
+                <div class="line-div"><div class="line-between"></div></div>
                 <div class="footer_line line-2">
                     <p>2023</p>
                     <p><a target="_blank" class="line-link" href="https://rs.school/js-stage0/">The Rolling Scopes School</a></p>
@@ -364,6 +405,7 @@
         </footer>
 
     </div>
+    <script src="burger.js"></script>
 </body>
 </html>
 
